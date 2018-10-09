@@ -57,7 +57,7 @@ Bugs fixed:
     it follows a thread-bound filter.
 - Fixed a performance regression observed when multiple parallel
     algorithms start simultaneously.
-    
+
 ------------------------------------------------------------------------
 Intel TBB 2019 Update 4
 TBB_INTERFACE_VERSION == 11004
@@ -66,7 +66,7 @@ Changes (w.r.t. Intel TBB 2019 Update 3):
 
 - global_control class is now a fully supported feature.
 - Added deduction guides for tbb containers: concurrent_hash_map,
-    concurrent_unordered_map, concurrent_unordered_set.     
+    concurrent_unordered_map, concurrent_unordered_set.
 - Added tbb::scalable_memory_resource function returning
     std::pmr::memory_resource interface to the TBB memory allocator.
 - Added tbb::cache_aligned_resource class that implements
@@ -83,7 +83,7 @@ Changes (w.r.t. Intel TBB 2019 Update 3):
 
 Bugs fixed:
 
-- Fixed compilation for tbb::concurrent_vector when used with 
+- Fixed compilation for tbb::concurrent_vector when used with
     std::pmr::polymorphic_allocator.
 
 Open-source contributions integrated:
