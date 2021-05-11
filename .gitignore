@@ -84,3 +84,7 @@ CMakeFiles/
 .svn
 crash*
 *.tmp
+
+# REZ and VSCode
+_rez_build
+.vscode
