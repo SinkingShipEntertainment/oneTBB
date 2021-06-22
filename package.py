@@ -28,7 +28,6 @@ requires = [
 ]
 
 private_build_requires = [
-    #"swig",
 ]
 
 variants = [
@@ -52,5 +51,8 @@ def commands():
     env.TBB_INCLUDE_DIR = "{root}/include"
 
     #env.LD_LIBRARY_PATH.append("{root}/lib")
+
+    if building:
+        env.CMAKE_MODULE_PATH.append("{root}/cmake")
 
 uuid = "repository.oneTBB"
