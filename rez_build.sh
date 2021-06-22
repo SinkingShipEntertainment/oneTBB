@@ -14,10 +14,9 @@ echo "Copying the files to REZ location"
 echo "----------------------------------------------------------------------"
 mkdir ${REZ_BUILD_INSTALL_PATH}/lib
 mkdir ${REZ_BUILD_INSTALL_PATH}/include
-mkdir ${REZ_BUILD_INSTALL_PATH}/cmake
 
 cp -a ${root_dir}/_rez_build/*_release/libtbb*.* ${REZ_BUILD_INSTALL_PATH}/lib
 cp -a ${root_dir}/_rez_build/*_debug/libtbb*.* ${REZ_BUILD_INSTALL_PATH}/lib
 cp -a ${root_dir}/include/serial ${REZ_BUILD_INSTALL_PATH}/include/serial
 cp -a ${root_dir}/include/tbb ${REZ_BUILD_INSTALL_PATH}/include/tbb
-cp -a ${root_dir}/cmake ${REZ_BUILD_INSTALL_PATH}/cmake
+cp -a ${root_dir}/cmake ${REZ_BUILD_INSTALL_PATH}
