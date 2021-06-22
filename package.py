@@ -28,8 +28,7 @@ requires = [
 ]
 
 private_build_requires = [
-    "gcc",
-    "swig",
+    #"swig",
 ]
 
 variants = [
@@ -41,6 +40,9 @@ tools = [
 
 build_command = "bash {root}/rez_build.sh {root}"
 
+def pre_build_commands():
+    command("source /opt/rh/devtoolset-6/enable")
+
 def commands():
     env.TBB_ROOT = "{root}"
     env.TBB_LOCATION = "{root}"
@@ -49,6 +51,6 @@ def commands():
     env.TBB_INSTALL_DIR = "{root}"
     env.TBB_INCLUDE_DIR = "{root}/include"
 
-    env.LD_LIBRARY_PATH.append("{root}/lib")
+    #env.LD_LIBRARY_PATH.append("{root}/lib")
 
 uuid = "repository.oneTBB"
