@@ -2,7 +2,7 @@ name = "tbb"
 
 authors = ["Intel"]
 
-version = "2019.6"
+version = "2020.3"
 
 description = \
     """
