@@ -48,8 +48,9 @@ def pre_build_commands():
 
 def commands():
     env.TBB_ROOT = "{root}"
+    env.TBB_ROOT_DIR = "{root}"
+    env.TBB_DIR = "{root}"
     env.TBB_LOCATION = "{root}"
-
     env.TBBROOT = "{root}"
     env.TBB_INSTALL_DIR = "{root}"
     env.TBB_INCLUDE_DIR = "{root}/include"
